@@ -29,11 +29,16 @@ Whether you’re a developer, a security professional, or anyone who wants missi
   - Each layer can have its own dynamic token/recipe, making brute-force and forensic attacks exponentially harder.
   - Optional: Quick access with outer layers, full access requires all tokens.
 
+- **Duress Password & Timed Self-Destruct (Planned)**
+  - Enter a special panic password to unlock the vault under coercion.
+  - Starts a secret timer (configurable); after expiry, the app wipes sensitive data in the background.
+  - Optional rescue code can halt the self-destruct if the threat is removed in time.
+
 - **Single-Use Passwords (Planned)**
   - Mark any credential as “single-use” for disposable logins or secure sharing.
   - Once revealed, copied, or used, the password self-deletes from the vault.
   - Perfect for guest access, emergency logins, or sharing temporary secrets.
-
+ 
 - **Multi-Platform (Planned)**  
   Windows-first (Delphi FMX), with Android support to follow.
 
@@ -56,6 +61,7 @@ Whether you’re a developer, a security professional, or anyone who wants missi
 | One-time sharing             | 🟡 Planned       | 🟢 Yes      | 🟡 Plugin | 🟢 Yes    | 🟢 Yes    |
 | Custom field/token system    | 🟢 Yes           | 🟡 Limited  | 🟡 Plugin | 🟡 Limited| 🟡 Limited|
 | Self-destruct/vault wipe     | 🟡 Planned       | 🔴 No       | 🔴 No     | 🔴 No     | 🔴 No     |
+| Duress/panic password (timed self-destruct) | 🟡 Planned | 🔴 No | 🔴 No | 🔴 No | 🔴 No |
 | Android "Live Vault" (Foreground Service, self-destruct on tamper/reboot) | 🟡 Planned | 🔴 No | 🔴 No | 🔴 No | 🔴 No |
 
 ¹ Requires internet or supported hardware for full 2FA functionality.
